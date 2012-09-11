@@ -1,0 +1,8 @@
+<h1>Search</h1>
+
+<%= form_for(:query, url: pages_path) do |f| %>
+
+  <%= f.text_field :query %>
+  
+  <%= f.submit "Search", class: "btn btn-large btn-primary" %>
+<% end %>
